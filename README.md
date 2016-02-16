@@ -89,3 +89,5 @@ echo Yii::$app->setting->get('siteName');
 Preview:
 -------
 ![Yii2-Setting](yii2-setting-preview.png)
+=======
+# setting
