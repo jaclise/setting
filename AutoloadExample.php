@@ -1,6 +1,6 @@
 <?php
 
-namespace funson86\setting;
+namespace jaclise\setting;
 
 /**
  * This is just an example.

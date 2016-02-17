@@ -1,8 +1,8 @@
 <?php
 
-namespace funson86\setting\controllers;
+namespace jaclise\setting\controllers;
 
-use funson86\setting\models\Setting;
+use jaclise\setting\models\Setting;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;

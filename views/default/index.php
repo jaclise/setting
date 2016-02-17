@@ -2,8 +2,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\helpers\ArrayHelper;
-use funson86\setting\models\Setting;
-use funson86\setting\Module;
+use jaclise\setting\models\Setting;
+use jaclise\setting\Module;
 
 $this->title = Module::t('setting', 'Setting');
 $this->params['breadcrumbs'][] = $this->title;

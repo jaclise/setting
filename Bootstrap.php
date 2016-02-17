@@ -1,6 +1,6 @@
 <?php
 
-namespace funson86\setting;
+namespace jaclise\setting;
 
 use yii\base\BootstrapInterface;
 
@@ -24,13 +24,13 @@ class Bootstrap implements BootstrapInterface
         )*/;
 
         // Add module I18N category.
-        if (!isset($app->i18n->translations['funson86/setting']) && !isset($app->i18n->translations['funson86/*'])) {
-            $app->i18n->translations['funson86/setting'] = [
+        if (!isset($app->i18n->translations['jaclise/setting']) && !isset($app->i18n->translations['jaclise/*'])) {
+            $app->i18n->translations['jaclise/setting'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
-                'basePath' => '@funson86/setting/messages',
+                'basePath' => '@jaclise/setting/messages',
                 'forceTranslation' => true,
                 'fileMap' => [
-                    'funson86/setting' => 'setting.php',
+                    'jaclise/setting' => 'setting.php',
                 ]
             ];
         }
