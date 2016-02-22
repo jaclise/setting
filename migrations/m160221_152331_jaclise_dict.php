@@ -17,7 +17,7 @@ class m160221_152331_jaclise_dict extends Migration
                 'id' => Schema::TYPE_PK,
                 'key' => Schema::TYPE_STRING . '(32) NOT NULL',
                 'type' => Schema::TYPE_STRING . '(32) NOT NULL',
-                'value' => Schema::TYPE_TEXT . '',
+                'value' => Schema::TYPE_STRING . '(50)',
                 'note' => Schema::TYPE_STRING . '(255)',
                 'order' => Schema::TYPE_INTEGER . ' NOT NULL DEFAULT 50',
             ],
