@@ -21,7 +21,7 @@ class Dict extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'jaclise_dict';
+        return 'system_dict';
     }
 
     /**
