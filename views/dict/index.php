@@ -2,7 +2,6 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use jaclise\setting\Module;
 
 /* @var $this yii\web\View */
 /* @var $searchModel jaclise\setting\models\DictSearch */
@@ -13,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dict-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+ <!--   <h1><?/*= Html::encode($this->title) */?></h1>-->
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
@@ -23,6 +22,15 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        //重新定义分页样式
+        'layout'=> '{items}<div class="text-right tooltip-demo">{pager}</div>',
+        /*'pager'=>[
+            //'options'=>['class'=>'hidden']//关闭分页
+            'firstPageLabel'=>"First",
+            'prevPageLabel'=>'Prev',
+            'nextPageLabel'=>'Next',
+            'lastPageLabel'=>'Last',
+        ],*/
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -33,7 +41,9 @@ $this->params['breadcrumbs'][] = $this->title;
             'note',
             // 'order',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+                'header' => '操作',
+            ],
         ],
     ]); ?>
 
